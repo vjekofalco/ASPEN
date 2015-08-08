@@ -129,10 +129,13 @@ h2 { font-weight:100; font-size: 22px; }
     white-space: nowrap;
     width: 300px;
     padding-left: 10px;
-	padding-top: 4px;
+	  padding-top: 4px;
 }
 select:hover{
 	border: 1px solid #878787;
+}
+select:focus{
+  outline: none;
 }
 
 .text-links{
@@ -190,3 +193,198 @@ input[type="checkbox"]:checked + label span {
     background-position: 20% 50%; 
     background-repeat: no-repeat;
 }
+
+.headerMenu{
+	width: 400px;
+	height: 200px;
+	background-color: #FFFFFF;
+	display: table;
+	float: left;
+}
+
+.headerMenu a{
+	display: table-cell;
+	vertical-align: middle;
+	color: #CBCBCB;
+	padding-left: 20%;
+	text-decoration: none;
+}
+
+.headerMenu:hover a{
+	text-decoration: underline;
+	color: #D7D7D7;
+}
+
+#second:hover a{
+	text-decoration: underline;
+	color: #F2C5B2;
+}
+
+.headerMenu:active a{
+	color: #CE704B;
+}
+
+#second {
+	margin-left: 30px;
+}
+
+.headerMenuWraper{
+  	display: block;
+  	overflow: auto;
+  }
+
+ .holder{
+ 	float: left;
+ 	width: 30%;
+ }
+
+ .headerBasket{
+
+ 	width: 75px;
+ 	height: 75px;
+ 	background-color: #FFFFFF;
+ 	background-image: url(img/headerBasketNormal.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+
+ }
+
+ .headerBasket:hover{
+
+ 	background-image: url(img/headerBasketHover.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+
+ }
+
+ .headerBasket:active{
+
+ 	background-image: url(img/headerBasketActive.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+
+ }
+
+ #headerBasket2:hover {
+	background-image: url(img/headerBasketHoverSecond.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.divLink{
+	display: block;
+}
+
+
+.searchInput {
+  width: 200px;
+  height: 20px;
+  color: #F8F8F8;
+  font-family: adihaus_italic;
+  background-image: url(img/lupa.png);
+  background-position: 98% 50%; 
+  background-repeat: no-repeat;
+  direction: none;
+  margin: 5px 10px 5px 10px;
+  border: 1px solid #E2E2E2;
+                
+}
+.searchInput::-webkit-input-placeholder { /* WebKit browsers */
+  line-height: 1.5em;
+}
+.searchInput:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  line-height: 1.5em;
+}
+.searchInput::-moz-placeholder { /* Mozilla Firefox 19+ */
+  line-height: 1.5em;
+}
+.searchInput:-ms-input-placeholder { /* Internet Explorer 10+ */
+  line-height: 1.5em;
+}
+
+.searchInput:focus{
+  color: #A0A0A0;
+  outline: none;
+  border: 1px solid #878787;
+}
+
+.searchInput:hover{
+      border: 1px solid #878787;
+}
+
+.backButton{
+  background-image: url(img/backNormal.png);
+  background-position: 2% 50%; 
+  background-repeat: no-repeat;
+  color: #A2A2A2;
+  text-decoration: none;
+  padding-left: 12px;
+}
+
+.backButton:hover{
+  background-image: url(img/backHover.png);
+  background-position: 2% 50%; 
+  background-repeat: no-repeat;
+  color: #949494;
+}
+
+.countrySellection{
+  color: #989898;
+}
+
+#country{
+  color: #656565;
+  font-family: adihaus_regular;
+}
+
+.closeButton{
+  background-image: url(img/closeNormal.png);
+  background-position: right; 
+  background-repeat: no-repeat;
+  color: #CF744F;
+  text-decoration: none;
+  padding-right: 24px;
+}
+
+.closeButton:hover{
+  background-image: url(img/closeHover.png);
+  background-position: right; 
+  background-repeat: no-repeat;
+  color: #E58F6D;
+}
+
+.bigTile{
+  width: 350px;
+  height: 350px;
+  background-color: #FFFFFF;
+  background-image: url(img/macBook.png);
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.bigTile:hover .bigTileInfo{
+  visibility: visible;
+}
+
+.bigTileInfo{
+  max-width: 100%;
+  height: 50%;
+  position: relative;
+  top: 50%;
+  background-color: #E27A50;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+  visibility: hidden;
+}
+
+.bigTileHeading{
+  font-family: adihaus_bold;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.bigTileDescription{
+  font-family: adihaus_oblique;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+

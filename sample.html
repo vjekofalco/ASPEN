@@ -308,13 +308,21 @@ input[type="checkbox"]:checked + label span {<br />
         <br /><br />
         &lt;style type=&quot;text/css&quot;&gt;<br />
         <br />
-       smallTiles { background-color:#FFFFFF; <br> font-family: AdiHaus-Regular; <br>width: auto;<br> width:200px;<br> height: 200px;<br>
-    background-image: url(img/mac_mini_2014_intro.png);<br>
-    background-position: center; <br>
-    background-repeat: no-repeat;<br>}<br>
-.smallTiles:hover { background-color:#FCFCFC; }<br>
-.smallTiles:active { background-color:#FCFCFC; }<br><br>&lt;/style &gt;<br><br>
-&lt;a href="http:/www.google.de" target="_blank" class="button"&gt;&lt;p class="smallTiles"&gt;&lt;/p&gt;&lt;/a&gt;
+       .aspenTile{<br />
+    width: 400px;<br />
+    height: 200px;<br />
+    background-color: #FFFFFF;<br />
+    background-image: url(img/aspenActive.png);<br />
+    background-position: 20% 50%; <br />
+    background-repeat: no-repeat;
+}<br /><br />
+
+.aspenTile:hover{<br />
+    background-image: url(img/aspenHover.png);<br />
+    background-position: 20% 50%; <br />
+    background-repeat: no-repeat;
+}<br><br>&lt;/style &gt;<br><br>
+&lt;div class="aspenTile"&gt;&lt;/div&gt;
         <br /><br />
     </p>
 </div><br><br>
@@ -322,7 +330,295 @@ input[type="checkbox"]:checked + label span {<br />
 
 <h2>HEADER-MENU</h2>
 
-<div class="headerMenu"><p>MY TICKETS<p></div>
+<div class="headerMenuWraper">
 
+    <div class="headerMenu"><a href="#"><p>MY TICKETS</p></a></div>
+
+    <div class="headerMenu" id="second"><a href="#"></p>MY TICKETS<p></a></div>
+
+</div>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br />
+        <br />
+       headerMenu{<br />
+    width: 400px;<br />
+    height: 200px;<br />
+    background-color: #FFFFFF;<br />
+    display: table;<br />
+    float: left;
+}<br /><br />
+
+.headerMenu a{<br />
+    display: table-cell;<br />
+    vertical-align: middle;<br />
+    color: #CBCBCB;<br />
+    padding-left: 20%;<br />
+    text-decoration: none;
+}<br /><br />
+
+.headerMenu:hover a{<br />
+    text-decoration: underline;<br />
+    color: #D7D7D7;
+}<br /><br />
+
+#second:hover a{<br />
+    text-decoration: underline;<br />
+    color: #F2C5B2;
+}<br /><br />
+
+.headerMenu:active a{<br />
+    color: #CE704B;
+}
+<br><br>&lt;/style &gt;<br><br>
+&lt;div class="wraper"&gt;
+&lt;div class="headerMenu"&gt;&lt;a href="#"&gt;&lt;p>MY TICKETS&lt;/p&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;div class="headerMenu" id="second"&gt;&lt;a href="#"&gt;&lt;p&gt;MY TICKETS&lt;/p&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+        <br /><br />
+    </p>
+</div><br><br>
+
+<h2> HEADER-BASKET </h2>
+
+<div class="wraper headerMenuWraper">
+<div class="holder">
+
+    <a href="https://www.google.de" class="divLink">
+    <div class="headerBasket">       
+    </div>
+    </a>
+
+</div>
+<div class="holder">
+
+    <a href="https://www.google.de" class="divLink">
+    <div class="headerBasket" id="headerBasket2">       
+    </div>
+    </a>
+
+</div>
+
+</div>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br />
+        <br />
+       .headerBasket{<br />
+
+    width: 75px;<br />
+    height: 75px;<br />
+    background-color: #FFFFFF;<br />
+    background-image: url(img/headerBasketNormal.png);<br />
+    background-position: center; <br />
+    background-repeat: no-repeat;
+
+ }<br />
+
+ .headerBasket:hover{<br />
+
+    background-image: url(img/headerBasketHover.png);<br />
+    background-position: center; <br />
+    background-repeat: no-repeat;
+
+ }<br />
+
+ .headerBasket:active{<br />
+
+    background-image: url(img/headerBasketActive.png);<br />
+    background-position: center; <br />
+    background-repeat: no-repeat;
+
+ }<br />
+
+ #headerBasket2:hover {<br />
+    background-image: url(img/headerBasketHoverSecond.png);<br />
+    background-position: center; <br />
+    background-repeat: no-repeat;
+}<br />
+.divLink{<br />
+    display: block;
+}<br />
+<br><br>&lt;/style &gt;<br><br>
+ &lt;a href="https://www.google.de" class="divLink"&gt;<br>
+    &lt;div class="headerBasket" id="headerBasket2"&gt;  <br>  
+    &lt;/div&gt;<br>
+    &lt;/a&gt;
+        <br /><br />
+    </p>
+</div><br><br>
+
+<h2>HEADER-SEARCH</h2>
+
+    <input type="text" placeholder="SEARCH" class="searchInput" ></input>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br />
+        <br />
+      .searchInput {<br />
+  width: 200px;<br />
+  height: 20px;<br />
+  color: #F8F8F8;<br />
+  font-family: adihaus_italic;<br />
+  background-image: url(img/lupa.png);<br />
+  background-position: 98% 50%; <br />
+  background-repeat: no-repeat;<br />
+  direction: none;<br />
+  margin: 5px 10px 5px 10px;<br />
+  border: 1px solid #E2E2E2;
+                
+}<br /><br />
+.searchInput::-webkit-input-placeholder { /* WebKit browsers */<br />
+  line-height: 1.5em;
+}<br /><br />
+.searchInput:-moz-placeholder { /* Mozilla Firefox 4 to 18 */<br />
+  line-height: 1.5em;
+}<br /><br />
+.searchInput::-moz-placeholder { /* Mozilla Firefox 19+ */<br />
+  line-height: 1.5em;
+}<br /><br />
+.searchInput:-ms-input-placeholder { /* Internet Explorer 10+ */<br />
+  line-height: 1.5em;
+}<br /><br />
+
+.searchInput:focus{<br />
+  color: #A0A0A0;<br />
+  outline: none;<br />
+  border: 1px solid #878787;
+}<br /><br />&lt;/style &gt;<br><br>
+ &lt;input type="text" placeholder="SEARCH" required class="searchInput" /&gt;
+        <br /><br />
+    </p>
+</div><br><br>
+
+<h2>BACK-BUTTON</h2>
+
+<a href="" class="backButton"> BACK</a>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br />
+        <br />
+     .backButton{<br />
+  background-image: url(img/backNormal.png);<br />
+  background-position: 2% 50%; <br />
+  background-repeat: no-repeat;<br />
+  color: #A2A2A2;<br />
+  text-decoration: none;<br />
+  padding-left: 12px;
+}<br /><br />
+
+.backButton:hover{<br />
+  background-image: url(img/backHover.png);<br />
+  background-position: 2% 50%; <br />
+  background-repeat: no-repeat;<br />
+  color: #949494;
+}<br /><br />
+&lt;/style &gt;<br><br>
+ &lt;a href="" class="backButton"&gt; BACK&lt;/a&gt;
+        <br /><br />
+    </p>
+</div><br><br>
+
+<h2> COUNTRY-SELLECTION </h2>
+
+<div class="countrySellection">
+    <label for="country"> COUNTRY: </label> 
+
+    <select id="country">
+        <option value="Croatia">Croatia</option>
+        <option value="USA">USA</option>
+        <option value="Poland">Poland</option>
+        <option value="Itally">Itally</option>
+    </select>
+</div>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br />
+        <br />
+     .countrySellection{<br />
+  color: #989898;
+}<br /><br />
+
+#country{<br />
+  color: #656565;<br />
+  font-family: adihaus_regular;
+}<br /><br />
+&lt;/style &gt;<br><br>
+ &lt;div class="countrySellection"&gt;
+    &lt;label for="country"&gt; COUNTRY: &lt;/label&gt; 
+
+    &lt;select id="country"&gt;
+        &lt;option value="Croatia"&gt;Croatia&lt;/option&gt;
+        &lt;option value="USA"&gt;USA&lt;/option&gt;
+        &lt;option value="Poland"&gt;Poland&lt;/option&gt;
+        &lt;option value="Itally"&gt;Itally&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;<br /><br />
+
+- THE REST OF THE DESIGN IS FROM THE REGULAR DROPDOWN FROM ABOVE -
+        <br /><br />
+    </p>
+</div><br><br>
+
+<h2> CLOSE-BUTTON </h2>
+
+<a href="" class="closeButton">CLOSE</a>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br />
+        <br />
+     .closeButton{<br />
+  background-image: url(img/closeNormal.png);<br />
+  background-position: right; <br />
+  background-repeat: no-repeat;<br />
+  color: #CF744F;<br />
+  text-decoration: none;<br />
+  padding-right: 24px;
+}<br /><br />
+
+.closeButton:hover{<br />
+  background-image: url(img/closeHover.png);<br />
+  background-position: right; <br />
+  background-repeat: no-repeat;<br />
+  color: #E58F6D;
+}<br /><br />
+&lt;/style &gt;<br /><br />
+&lt;a href="" class="closeButton"&gt;CLOSE&lt;/a&gt;
+
+<br /><br />
+
+        <br /><br />
+    </p>
+</div><br><br>
+
+<h2> BIG-TILE </h2>
+
+<div class="bigTile">
+
+    <div class="bigTileInfo">
+
+            <p class="bigTileHeading"> MAC BOOK PRO </p>
+            
+            <p class="bigTileDescription">Intel Xeon E5 with 12MB L3 cache and <br> Turbo Boost up to 3.9GHz</p>
+
+            <a href="" class="showDetails">SHOW DETAILS</a>
+
+    </div>
+
+</div>
+     
 </body>
 </html>
