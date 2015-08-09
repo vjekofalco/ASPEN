@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Sample</title>
 <link rel="stylesheet" type="text/css" href="sample.css">
+<script src="bower_components/dist/jquery.min.js"></script>
 <style>
 @font-face { font-family: adihaus_bold; src: url('adihaus-Font/adihaus_bold.ttf'); }
 @font-face { font-family: adihaus_italic; src: url('adihaus-Font/adihaus_italic.ttf'); }
@@ -619,6 +620,214 @@ input[type="checkbox"]:checked + label span {<br />
     </div>
 
 </div>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br />
+        <br />
+     .bigTile{<br />
+  width: 350px;<br />
+  height: 350px;<br />
+  background-color: #FFFFFF;<br />
+  background-image: url(img/macBook.png);<br />
+  background-position: center; <br />
+  background-repeat: no-repeat;
+}<br /><br />
+
+.bigTile:hover .bigTileInfo{<br />
+  visibility: visible;
+}<br /><br />
+
+.bigTileInfo{<br />
+  max-width: 100%;<br />
+  height: 50%;<br />
+  position: relative;<br />
+  top: 50%;<br />
+  background-color: #E27A50;<br />
+  opacity: 0.8;<br />
+  filter: alpha(opacity=80); /* For IE8 and earlier */<br />
+  visibility: hidden;<br />
+  padding: 15px;<br />
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */<br />
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */<br />
+  box-sizing: border-box;   
+}<br /><br />
+
+.bigTileHeading{<br />
+  font-family: adihaus_bold;<br />
+  font-size: 16px;<br />
+  color: #FFFFFF;
+}<br /><br />
+
+.bigTileDescription{<br />
+  font-family: adihaus_oblique;<br />
+  font-size: 13px;<br />
+  color: #FFFFFF;
+}<br /><br />
+
+.showDetails{<br />
+  color: #FFFFFF;<br />
+  text-decoration: none;<br />
+  position: absolute;<br />
+  bottom: 4%;<br />
+  right: 4%;
+}<br /><br />
+
+.showDetails:hover{<br />
+  text-decoration: underline;
+}<br /><br />
+&lt;/style &gt;<br /><br />
+&lt;div class="bigTile"&gt;<br /><br />
+
+    &lt;div class="bigTileInfo"&gt;<br /><br />
+
+            &lt;p class="bigTileHeading"> MAC BOOK PRO &lt;/p&gt;<br />
+            
+            &lt;p class="bigTileDescription">Intel Xeon E5 with 12MB L3 cache and &lt;br&gt; Turbo Boost up to 3.9GHz&lt;/p&gt;<br />
+
+            &lt;a href="" class="showDetails">SHOW DETAILS&lt;/a&gt;<br /><br />
+
+    &lt;/div&gt;<br /><br />
+
+&lt;/div&gt;
+
+<br /><br />
+
+        <br /><br />
+    </p>
+</div><br><br>
+
+<h2> BREADCRUMP </h2>
+
+<div class="breadcrumpHolder">
+
+ <div class="breadcrumps">
+
+  <a href="" class="breadcrump">ASPEN Portal</a> <img src="img/breadcrump.png" class="breadcrump" > </img> <a href="" class="breadcrump"> Get Stuff </a> </div>
+
+</div>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br />
+        <br />
+    .breadcrumpHolder{<br />
+  display: table;<br />
+  background-color: #E2E2E2;<br />
+  height: 50px;<br />
+  width: 300px
+}<br /><br />
+
+.breadcrump{<br />
+  float: left;<br />
+  padding-left: 15px;<br />
+  color: #393939;<br />
+  text-decoration: none;
+}<br /><br />
+
+.breadcrumps{<br />
+   display: table-cell;<br />
+   vertical-align: middle;
+}<br /><br />
+
+.breadcrump:hover{<br />
+  color:#878787;
+}<br /><br />
+
+.breadcrump:active{<br />
+  color: #B7B7B7;
+}
+<br /><br />
+&lt;/style &gt;<br /><br />
+&lt;div class="breadcrumpHolder"&gt;<br /><br />
+
+ &lt;div class="breadcrumps"&gt;<br /><br />
+
+  &lt;a href="" class="breadcrump"&gt;ASPEN Portal&lt;/a&gt; &lt;img src="img/breadcrump.png" class="breadcrump"&gt; &lt;/img&gt; &lt;a href="" class="breadcrump"&gt; Get Stuff &lt;/a&gt;<br /><br /> &lt;/div&gt;<br /><br />
+
+&lt;/div>
+
+        <br /><br />
+    </p>
+</div><br><br>
+
+<h2>GET: STUFF, HELP, INFO TILE</h2>
+
+<div class="Wraper colorsWraper">
+
+<a href="" class="divLink">
+<div class="getStuffTile">
+  <div class="logoHolderStuf">
+  </div>
+</div>
+</a>
+
+
+<a href="" class="divLink">
+  <div class="getHelpTile">
+  <div class="logoHolderHelp">
+  </div>
+</div>
+</a>
+
+<a href="" class="divLink">
+<div class="getInfoTile">
+  <div class="logoHolderInfo">
+  </div>
+</div>
+</a>
+
+</div>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br />
+        <br />
+   .getStuffTile{<br />
+  background-image: url(img/getStuf.png);<br />
+  background-size: cover;<br />
+  width: 300px;<br />
+  height: 300px;<br />
+  display: table;
+}<br /><br />
+
+.logoHolderStuf{<br />
+  width: 100%;<br />
+  height: 100%;<br />
+  position: relative;<br />
+  background:url(img/getStufLogo.png) no-repeat center center;<br />
+  background-color: #C7582F;<br />
+  opacity: 0.7;<br />
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+}<br /><br />
+
+.logoHolderStuf:hover{<br />
+  background-color: #E27A50;
+}
+<br /><br />
+&lt;/style &gt;<br /><br /><br /><br />
+
+&lt;/a href="" class="divLink"&gt;<br /><br />
+&lt;div class="getStuffTile"&gt;<br /><br />
+  &lt;div class="logoHolderStuf"&gt;<br />
+  &lt;/div&gt;<br /><br />
+&lt;/div&gt;<br /><br />
+&lt;/a&gt;
+        <br /><br />
+    </p>
+</div><br><br>
+
+<h2>MENU-TILE</h2>
+
+<div class="MenuTile">
+  <div class="MenuTileLogo">
+    <img src="img/arrowDown.png" class="menuTileArrow"></img>
+  </div>
+</div>
      
+<script src="main.js"></script>
 </body>
 </html>
