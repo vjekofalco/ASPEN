@@ -17,9 +17,9 @@
 
 <h2> BUTTON </h2>
 
-<a href="http:/www.google.de" target="_blank" class="button"><p class="ui-button-text">THIS IS A TEST BUTTON</p></a>
-<a href="http:/www.google.de" target="_blank" class="button"><p class="ui-button-text light">THIS IS A TEST BUTTON</p></a>
-<a href="http:/www.google.de" target="_blank" class="button"><p class="ui-button-text disabled">THIS IS A DISABLED TEST BUTTON</p></a><br><br>
+<a href="http:/www.google.de" target="_blank" class="buttonLeft"><p class="ui-button-text">THIS IS A TEST BUTTON</p></a>
+<a href="http:/www.google.de" target="_blank" class="buttonLeft"><p class="ui-button-text light">THIS IS A TEST BUTTON</p></a>
+<a href="http:/www.google.de" target="_blank" class="buttonLeft"><p class="ui-button-text disabled">THIS IS A DISABLED TEST BUTTON</p></a><br><br>
 
 <div id="code">
 	<p style="margin:30px;">
@@ -827,6 +827,277 @@ input[type="checkbox"]:checked + label span {<br />
     <img src="img/arrowDown.png" class="menuTileArrow"></img>
   </div>
 </div>
+
+<h2> POPUP </h2>
+
+<div class="popup">
+  <div class="header">
+    <p class="headerHeadline">ITEM ADDED TO YOUR SHOPING BASKET</p>
+    <a href="" class="closeButton rightCloseButton">CLOSE</a>
+  </div>
+
+  <hr class="underline">
+
+  <div class="popupItemdata">
+
+    <div class="itemDataLeft">
+      <div class="itemPic"> 
+        <img src="img/itemPic.png" />
+      </div>
+      <div class="itemTitle">
+        <p> MAC BOOK PRO</p>
+        <p> 6-Core processor </p>
+      </div>
+    </div>
+
+    <div class="itemDataRight">
+
+      <p>Configurable to 3.0GHz 8-core processor with 25MB L3 cache or 2.7GHz 12-core processor with 30MB L3 cache Configurable to dual AMD FirePro D500, each with 3GB GDDR5 VRAM, 1526 stream processors ... </p>
+
+    </div>
+  </div>
+
+  <div class="buttonHolder">
+
+        <a href="http:/www.google.de" target="_blank" class="button buttonLeft"><p class="ui-button-text">CONTINUE SHOPPING</p></a>  
+        <a href="http:/www.google.de" target="_blank" class="button buttonRight"><p class="ui-button-text">GO TO SHOPING BASKET</p></a>
+
+  </div>
+</div>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br /><br />
+   .popup{<br />
+  width: 900px;<br />
+  height: 300px;<br />
+  background-color: #FFFFFF;<br />
+  padding: 15px;<br />
+  position: relative;<br />
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */<br />
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */<br />
+  box-sizing: border-box;   
+}<br /><br />
+
+.rightCloseButton{<br />
+  float: right;
+}<br /><br />
+
+.headerHeadline{<br />
+  float: left;<br />
+  color: #D4D4D4;<br />
+  padding: 0;<br />
+  margin: 0;
+}<br /><br />
+.header{<br />
+  display: block;<br />
+  overflow: auto;
+}<br /><br />
+
+.underline {<br />
+  color: #878787;
+}<br /><br />
+
+.popupItemdata{<br />
+  display: block;<br />
+  overflow: auto;<br />
+  width: 100%;<br />
+  padding-top: 10px;
+}<br /><br />
+.itemDataLeft{<br />
+  float: left;<br />
+  width: 40%;<br />
+  display: block;<br />
+  overflow: auto;<br />
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */<br />
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */<br />
+  box-sizing: border-box;   
+}<br /><br />
+.itemDataRight{<br />
+  float: left;<br />
+  width: 60%;<br />
+  display: block;<br />
+  overflow: auto;<br />
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */<br />
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */<br />
+  box-sizing: border-box;   
+}<br /><br />
+
+.itemPic, .itemTitle{<br />
+  float: left;
+}<br /><br />
+
+.itemPic{<br />
+  padding-right: 10px;
+}<br /><br />
+
+.buttonHolder{<br />
+  width: 60%;<br />
+  position: absolute;<br />
+  bottom: 0;<br />
+  right: 0;<br />
+  padding-right: 15px;<br />
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */<br />
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */<br />
+  box-sizing: border-box;   
+}<br /><br />
+
+&lt;/style &gt;<br /><br />
+
+&lt;div class="popup"&gt;<br /><br />
+  &lt;div class="header"&gt;<br /><br />
+    &lt;p class="headerHeadline"&gt;ITEM ADDED TO YOUR SHOPING BASKET&lt;/p&gt;<br />
+    &lt;a href="" class="closeButton rightCloseButton">CLOSE&lt;/a&gt;<br /><br />
+  &lt;/div&gt;<br /><br />
+
+  &lt;hr class="underline"&gt;<br /><br />
+
+  &lt;div class="popupItemdata"&gt;<br /><br />
+
+    &lt;div class="itemDataLeft"&gt;<br />
+      &lt;div class="itemPic"&gt;<br />
+        &lt;img src="img/itemPic.png" /&gt;<br />
+      &lt;/div&gt;<br />
+      &lt;div class="itemTitle"&gt;<br />
+        &lt;p> MAC BOOK PRO&lt;/p&gt;<br />
+        &lt;p> 6-Core processor &lt;/p&gt;<br />
+      &lt;/div&gt;<br /><br />
+    &lt;/div&gt;<br /><br />
+
+    &lt;div class="itemDataRight"&gt;<br /><br />
+
+      &lt;p&gt;Configurable to 3.0GHz 8-core processor with 25MB L3 cache or 2.7GHz 12-core processor with 30MB L3 cache Configurable to dual AMD FirePro D500, each with 3GB GDDR5 VRAM, 1526 stream processors ... &lt;/p&gt;<br /><br />
+
+    &lt;/div&gt;<br /><br />
+  &lt;/div&gt;<br /><br />
+
+  &lt;div class="buttonHolder"&gt;<br /><br />
+
+        &lt;a href="http:/www.google.de" target="_blank" class="button buttonLeft"&gt;&lt;p class="ui-button-text">CONTINUE SHOPPING&lt;/p&gt;&lt;/a&gt;<br />
+        &lt;a href="http:/www.google.de" target="_blank" class="button buttonRight"&gt;&lt;p class="ui-button-text"&gt;GO TO SHOPING BASKET&lt;/p&gt;&lt;/a&gt;<br /><br />
+
+  &lt;/div&gt;<br /><br />
+&lt;/div&gt;
+        <br /><br />
+    </p>
+</div><br><br>
+
+<h2> NOTIFICATION: INFO, CRITICAL, ERROR, SUCCESS </h2>
+
+<div class="info">
+  <p class="notificationText">THIS IS A NOTIFICATION MESSAGE</p><a class="close" href=""><img src="img/close.png" /></a>
+</div> <br>
+
+<div class="critical">
+  <p class="notificationText">THIS IS A CRITICAL MESSAGE</p><a class="close" href=""><img src="img/closeCritical.png" /></a>
+</div> <br>
+
+<div class="error">
+  <p class="notificationText">THIS IS A ERROR MESSAGE</p><a class="close" href=""><img src="img/closeError.png" /></a>
+</div> <br>
+
+<div class="success">
+  <p class="notificationText">THIS IS A SUCCESS MESSAGE</p><a class="close" href=""><img src="img/closeSuccess.png" /></a>
+</div>
+
+<div id="code">
+    <p style="margin:30px;">
+        <br /><br />
+        &lt;style type=&quot;text/css&quot;&gt;<br /><br />
+  .info, .critical, .error, .success {<br />
+  width: 500px;<br />
+  height: 40px;<br />
+  display: block;<br />
+  overflow: auto;<br />
+  display: table;
+}<br /><br />
+
+.info{<br />
+  background-color: #C3C3C3;<br />
+  border-bottom: 3px solid #878787;<br />
+  background-image: url(img/info.png);<br />
+  background-position: 3% 50%; <br />
+  background-repeat: no-repeat;<br />
+  color: #909090;
+}<br /><br />
+
+.critical{<br />
+  background-color: #E27A50;<br />
+  border-bottom: 3px solid #C7582F;<br />
+  background-image: url(img/critical.png);<br />
+  background-position: 3% 50%; <br />
+  background-repeat: no-repeat;<br />
+  color: #CE6037;
+}<br /><br />
+
+.error{<br />
+  background-color: #F8DF90;<br />
+  border-bottom: 3px solid #BBA55C;<br />
+  background-image: url(img/error.png);<br />
+  background-position: 3% 50%; <br />
+  background-repeat: no-repeat;<br />
+  color: #D9C176;
+}<br /><br />
+
+.success{<br />
+  background-color: #CDDDBD;<br />
+  border-bottom: 3px solid #85A169;<br />
+  background-image: url(img/sucess.png);<br />
+  background-position: 3% 50%; <br />
+  background-repeat: no-repeat;<br />
+  color: #8EA772;
+}<br /><br />
+
+.info:hover{<br />
+  background-color: #E2E2E2;
+}<br /><br />
+
+.critical:hover{<br />
+  background-color: #F49169;
+}<br /><br />
+
+.error:hover{<br />
+  background-color: #FBE7A6;
+}<br /><br />
+
+.success:hover{<br />
+  background-color: #DEEBCF;
+}<br /><br />
+
+.notificationText{<br />
+  padding: 0;<br />
+  margin-left: 20%;<br />
+  float: left;<br />
+  display: table-cell;<br />
+  vertical-align: middle;
+}<br /><br />
+
+.close{<br />
+  display: table-cell;<br />
+  vertical-align: middle;
+}<br /><br />
+
+&lt;/style &gt;<br /><br />
+
+&lt;div class="info"&gt;<br />
+  &lt;p class="notificationText"&gt;THIS IS A NOTIFICATION MESSAGE&lt;/p&gt;&lt;a class="close" href=""&gt;&lt;img src="img/close.png" /&gt;&lt;/a&gt;<br />
+&lt;/div&gt; <br><br />
+
+&lt;div class="critical"&gt;<br />
+  &lt;p class="notificationText"&gt;THIS IS A CRITICAL MESSAGE&lt;/p&gt;&lt;a class="close" href=""&gt;&lt;img src="img/closeCritical.png" /&gt;&lt;/a&gt;<br />
+&lt;/div&gt; <br><br />
+
+&lt;div class="error"&gt;<br />
+  &lt;p class="notificationText"&gt;THIS IS A ERROR MESSAGE&lt;/p&gt;&lt;a class="close" href=""&gt;&lt;img src="img/closeError.png" /&gt;&lt;/a&gt;<br />
+&lt;/div&gt; <br><br />
+
+&lt;div class="success"&gt;<br />
+  &lt;p class="notificationText"&gt;THIS IS A SUCCESS MESSAGE&lt;/p&gt;&lt;a class="close" href=""&gt;&lt;img src="img/closeSuccess.png" /&gt;&lt;/a&gt;<br />
+&lt;/div&gt;
+        <br /><br />
+    </p>
+</div><br><br>
      
 <script src="main.js"></script>
 </body>
