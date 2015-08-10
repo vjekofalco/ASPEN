@@ -1,8 +1,38 @@
 body { font-family: adihaus_regular; background-color: #F2F2F2;}
-h2 { font-weight:100; font-size: 22px; }
+#heading { font-weight:100; font-size: 22px; }
 
 
 #code {width:100%; height:auto; margin:0px; background-color:#E7E7E7; color:#000000; font-style:italic; }
+
+#h1{
+  font-size: 30px;
+  color: #7B7B7B;
+  font-family: adihaus_regular;
+  line-height: 35px;
+}
+#h2{
+  font-size: 16px;
+  color: #000000;
+  font-family: adihaus_regular;
+  line-height: 18px;
+}
+#h3{
+  font-size: 16px;
+  color: #878787;
+  font-family: adihaus_regular;
+  text-decoration: underline;
+  line-height: 18px;
+  }
+#h4{
+  font-size: 12px;
+  color: #6E6E6E;
+  font-family: adihaus_regular;
+  line-height: 18px;}
+#p{
+  font-size: 12px;
+  color: #000000;
+  font-family: adihaus_regular;
+  line-height: 18px;}
 
 
 .ui-button-text {
@@ -559,6 +589,7 @@ input[type="checkbox"]:checked + label span {
   color: #D4D4D4;
   padding: 0;
   margin: 0;
+  font-size: 
 }
 .header{
   display: block;
